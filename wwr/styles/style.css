@@ -37,8 +37,32 @@ nav a {
     display: grid;
     grid-template-columns: repeat(10, minmax(0, 1fr));
 }
+.rivers-grid {
+    display: grid;
+    grid-template-columns: repeat(20, minmax(0, 1fr));
+    grid-template-rows: repeat(14, minmax(0, 100px));
+}
+.salmon-river, .salmon-river-message{
+    grid-column: 2/20;
+    grid-row: 2/6;
+}
+.salmon-river-message, .desolation-river-message, .grand-canyon-river-message {
+    z-index: -1;
+}
+.desolation-river, .desolation-river-message {
+    grid-column: 2/20;
+    grid-row: 7/11;
+}
+.grand-canyon-river, .grand-canyon-river-message {
+    grid-column: 2/20;
+    grid-row: 12/15;
+}
 .card-img, .mountains {
     width: 100%;
+}
+.message-img {
+    width: 100%;
+    height: 100%;
 }
 .mountains {
     grid-column: 2/7;
@@ -117,7 +141,7 @@ nav a:hover {
     grid-column: 1/11;
     grid-row: 4/9;
 }
-.card-img {
+.card-img, .message-img {
     border: 10px solid #d9c2a3;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #6f7364;
@@ -125,6 +149,9 @@ nav a:hover {
 .card-img:hover {
     opacity: .6;
     transform: scale(1.1);
+}
+.message-img:hover {
+    opacity: .3;
 }
 .msg {
     background-color: #284B63;
