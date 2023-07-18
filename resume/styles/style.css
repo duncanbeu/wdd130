@@ -44,25 +44,21 @@ header {
     display: inline-block;
 }
 footer {
-    grid-template-columns: 8fr 2fr 1fr 1fr 1fr 1fr;
-}
-.plan {
-    grid-column: 2/3;
-}
-#fb {
-    grid-column: 3/4;
-}
-#twitter {
-    grid-column: 4/5;
-}
-#insta {
-    grid-column: 5/6;
+    color: #F4F9E9;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 body {
     background-color: #7A8584;
 }
-p a {
+.site-plan {
     font-size: .8em;
     padding-top: 15px;
     font-family: 'Josefin Sans', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
 }
