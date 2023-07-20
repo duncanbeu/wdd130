@@ -26,9 +26,12 @@ nav a {
     font-size: 50px;
     color: black;
 }
-.resume-card {
-    top: 300px;
-    bottom: 0;
-    left: 500px;
-    right: 0;
+.resume-grid{
+    grid-template-columns: 1fr 4fr 1fr;
+}
+.resume1 {
+    grid-column: 2/3;
+}
+.resume2 {
+    grid-column: 2/3;
 }
